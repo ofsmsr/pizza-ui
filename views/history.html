@@ -1,0 +1,36 @@
+<div ng-if="!historyDetails.length">
+    No Orders Found
+</div>
+<div ng-if="historyDetails.length">
+    <div class="row text-center">          
+        <div class="col-sm-2 grid-header">
+            Image
+        </div>
+        <div class="col-sm-4 grid-header">
+            Product Details
+        </div>
+        <div class="col-sm-3 grid-header">
+            Amount
+        </div>
+        <div class="col-sm-3 grid-header">
+            Date
+        </div>
+    </div>
+    <div class="row text-center grid-row" 
+        ng-class-odd="'grey-bg'" ng-repeat="history in historyDetails track by $index">          
+        <div class="col-sm-2">
+            <img src="../assets/images/promo-img-1.jpg" alt="" class="img-spec">
+        </div>
+        <div class="col-sm-4">
+            <div ng-repeat="product in history.productDetails track by $index">
+                {{product.productName}}&nbsp;&nbsp;&nbsp;$&nbsp;{{product.amount}}
+            </div>
+        </div>
+        <div class="col-sm-3">
+            $&nbsp;{{history.amount}}
+        </div>
+        <div class="col-sm-3">
+            {{history.date}}
+        </div>
+    </div>
+</div>
