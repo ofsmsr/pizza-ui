@@ -5,6 +5,10 @@ angular.module('app', [
         url: '/login',
         templateUrl: '../../views/login.html',
         controller: 'loginController'
+    }).state('registration', {
+        url: '/registration',
+        templateUrl: '../../views/registration.html',
+        controller: 'registrationController'
     }).state('home', {
         url: '/home',
         templateUrl: '../../views/home.html',

@@ -9,7 +9,8 @@
                 <label for="pwd" class="pull-left">Password:</label>
                 <input type="password" ng-model="user.password" class="form-control" id="pwd">
             </div>
-            <button type="submit" ng-click="doLogin(user)" class="btn btn-primary pull-right">Login</button>
+            <button type="button" ng-click="onSignUp()" class="btn btn-primary" style="margin-right: 35%">Sign Up</button>
+            <button type="button" ng-click="onSignIn(user)" class="btn btn-primary pull-right">Sign In</button>
         </form>
     </div>
 </div>

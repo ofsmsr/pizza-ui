@@ -1,7 +1,7 @@
 angular.module('app').controller('loginController', function ($scope,
     $state,
     appService) {
-    $scope.doLogin = function doLogin(user) {
+    $scope.onSignIn = function onSignIn(user) {
         var config = {			
 			method: 'POST',
 			url: 'http://127.0.0.1:9000/login',
@@ -16,5 +16,9 @@ angular.module('app').controller('loginController', function ($scope,
         }).finally(function () {
             appService.loaderStop();
         });
+    };
+
+    $scope.onSignUp = function onSignUp() {
+        $state.go('registration');
     };
 });
