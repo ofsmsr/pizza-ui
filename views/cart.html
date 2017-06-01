@@ -3,25 +3,25 @@
 </div>
 <div ng-if="cartDetails.length">
     <div class="row text-center">          
-        <div class="col-sm-3 grid-header">
+        <div class="col-xs-3 grid-header">
             Image
         </div>
-        <div class="col-sm-3 grid-header">
+        <div class="col-xs-3 grid-header">
             Name
         </div>
-        <div class="col-sm-3 grid-header">
+        <div class="col-xs-3 grid-header">
             Cost
         </div>
     </div>
     <div class="row text-center grid-row"
         ng-class-odd="'grey-bg'" ng-repeat="cart in cartDetails track by $index">          
-        <div class="col-sm-3">
+        <div class="col-xs-3">
             <img src="../assets/images/promo-img-1.jpg" alt="" class="img-spec">
         </div>
-        <div class="col-sm-3">
+        <div class="col-xs-3">
             {{cart.productDetails.productName}}
         </div>
-        <div class="col-sm-3">
+        <div class="col-xs-3">
             $&nbsp;{{cart.productDetails.amount}}
         </div>
     </div>

@@ -103,3 +103,29 @@ h3.title {
     font-weight: bold;
     font-size: 16px;
 }
+
+.no-padding {
+    padding: 0px;
+}
+
+.md-width-20 {
+    width: 20%;
+}
+
+.md-width-40 {
+    width: 40%;
+}
+
+
+/*Media query*/
+@media only screen and (max-width: 480px) {
+    .img-spec {
+        height: 65px;
+        width: 100%;
+    }
+
+    .md-width-20, .md-width-40 {
+        width: 100%;
+    }
+
+}
