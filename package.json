@@ -1,21 +1,21 @@
 {
-  "name": "pizza-ui",
+  "name": "PizzaProfessorWeb",
   "version": "1.0.0",
-  "description": "Pizza Ui",
+  "description": "PizzaProfessor Web",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ofsmsr/pizza-ui.git"
+    "url": "git+https://github.com/ofsmsr/PizzaProfessorWeb.git"
   },
   "author": "Madhusudhanarao Balaji",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ofsmsr/pizza-ui/issues"
+    "url": "https://github.com/ofsmsr/PizzaProfessorWeb/issues"
   },
-  "homepage": "https://github.com/ofsmsr/pizza-ui#readme",
+  "homepage": "https://github.com/ofsmsr/PizzaProfessorWeb#readme",
   "dependencies": {
     "express": "^4.15.2"
   }
